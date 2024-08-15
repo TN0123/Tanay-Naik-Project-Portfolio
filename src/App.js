@@ -13,10 +13,16 @@ function App() {
         <Navbar />
         <Routes>
           <Route index element={<Home />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/projects" element={<ProjectPage />}></Route>
           <Route
-            path="/Real Time Carbon Emissions Visualizer"
+            path="Tanay-Naik-Project-Portfolio/contact"
+            element={<Contact />}
+          ></Route>
+          <Route
+            path="Tanay-Naik-Project-Portfolio/projects"
+            element={<ProjectPage />}
+          ></Route>
+          <Route
+            path="Tanay-Naik-Project-Portfolio/Real Time Carbon Emissions Visualizer"
             element={
               <Project
                 img="./images/carbon-emissions-project-img.png"
@@ -29,7 +35,7 @@ function App() {
           ></Route>
 
           <Route
-            path="/Cerebro"
+            path="Tanay-Naik-Project-Portfolio/Cerebro"
             element={
               <Project
                 img="./images/Cerebro Logo.jpg"
@@ -42,7 +48,7 @@ function App() {
           ></Route>
 
           <Route
-            path="/FaceLogger"
+            path="Tanay-Naik-Project-Portfolio/FaceLogger"
             element={
               <Project
                 img="./images/FaceLoggerDemo (1).gif"
@@ -55,7 +61,7 @@ function App() {
           ></Route>
 
           <Route
-            path="/LLTrainer"
+            path="Tanay-Naik-Project-Portfolio/LLTrainer"
             element={
               <Project
                 img="./images/LLTrainerDemo (1).gif"

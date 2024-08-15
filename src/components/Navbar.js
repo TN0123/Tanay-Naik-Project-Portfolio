@@ -24,23 +24,31 @@ function Navbar() {
 
       <ul className={menuOpen ? "open" : ""}>
         <li>
-          <NavLink to="/">About</NavLink>
+          <NavLink to="/Tanay-Naik-Project-Portfolio/">About</NavLink>
         </li>
         <li>
           <div class="dropdown">
-            <NavLink to="/projects">Projects</NavLink>
+            <NavLink to="Tanay-Naik-Project-Portfolio/projects">
+              Projects
+            </NavLink>
             <div class="dropdown-content">
               <NavLink to="/Real%20Time%20Carbon%20Emissions%20Visualizer">
                 Real Time Carbon Emissions Visualizer
               </NavLink>
-              <NavLink to="/Cerebro">Cerebro</NavLink>
-              <NavLink to="/FaceLogger">FaceLogger</NavLink>
-              <NavLink to="/LLTrainer">LLTrainer</NavLink>
+              <NavLink to="Tanay-Naik-Project-Portfolio/Cerebro">
+                Cerebro
+              </NavLink>
+              <NavLink to="Tanay-Naik-Project-Portfolio/FaceLogger">
+                FaceLogger
+              </NavLink>
+              <NavLink to="Tanay-Naik-Project-Portfolio/LLTrainer">
+                LLTrainer
+              </NavLink>
             </div>
           </div>
         </li>
         <li>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="Tanay-Naik-Project-Portfolio/contact">Contact</NavLink>
         </li>
       </ul>
     </nav>
