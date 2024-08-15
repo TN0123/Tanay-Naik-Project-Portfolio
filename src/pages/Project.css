@@ -1,0 +1,31 @@
+.project-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p, .repo-link{
+    line-height: 2;
+    font-size: 20px;
+    width: 70%;
+    text-align: center;
+}
+
+.repo-link {
+    text-decoration: none;
+    color: blue;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+img {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 0.5rem;
+    height: 500px;
+    max-width: 75%;
+}
