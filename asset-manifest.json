@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/TN0123/Tanay-Naik-Project-Portfolio.git/static/css/main.5c2d3b97.css",
+    "main.js": "/TN0123/Tanay-Naik-Project-Portfolio.git/static/js/main.6c9c6ff1.js",
+    "index.html": "/TN0123/Tanay-Naik-Project-Portfolio.git/index.html",
+    "main.5c2d3b97.css.map": "/TN0123/Tanay-Naik-Project-Portfolio.git/static/css/main.5c2d3b97.css.map",
+    "main.6c9c6ff1.js.map": "/TN0123/Tanay-Naik-Project-Portfolio.git/static/js/main.6c9c6ff1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c2d3b97.css",
+    "static/js/main.6c9c6ff1.js"
+  ]
+}
