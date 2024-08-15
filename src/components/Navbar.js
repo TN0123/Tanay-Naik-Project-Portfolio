@@ -24,7 +24,7 @@ function Navbar() {
 
       <ul className={menuOpen ? "open" : ""}>
         <li>
-          <NavLink to="/Tanay-Naik-Project-Portfolio/">About</NavLink>
+          <NavLink to="/">About</NavLink>
         </li>
         <li>
           <div class="dropdown">
@@ -32,7 +32,7 @@ function Navbar() {
               Projects
             </NavLink>
             <div class="dropdown-content">
-              <NavLink to="/Real%20Time%20Carbon%20Emissions%20Visualizer">
+              <NavLink to="https://tn0123.github.io/Tanay-Naik-Project-Portfolio/Real%20Time%20Carbon%20Emissions%20Visualizer">
                 Real Time Carbon Emissions Visualizer
               </NavLink>
               <NavLink to="Tanay-Naik-Project-Portfolio/Cerebro">
