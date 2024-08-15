@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Contact from "./pages/Contact";
@@ -9,7 +9,7 @@ import ProjectPage from "./pages/ProjectPage";
 function App() {
   return (
     <div className="PortfolioWebsite">
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         <Routes>
           <Route index element={<Home />}></Route>
@@ -67,7 +67,7 @@ function App() {
             }
           ></Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
