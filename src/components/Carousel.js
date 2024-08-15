@@ -26,7 +26,10 @@ const Carousel = ({ images, names }) => {
         />
         <a
           className="carousel-project-title"
-          href={"#/Tanay-Naik-Project-Portfolio/" + names[activeIndex]}
+          href={
+            "https://tn0123.github.io/Tanay-Naik-Project-Portfolio/#/Tanay-Naik-Project-Portfolio/" +
+            names[activeIndex]
+          }
         >
           {names[activeIndex]}
         </a>
