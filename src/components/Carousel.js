@@ -24,7 +24,10 @@ const Carousel = ({ images, names }) => {
           alt={`Slide ${activeIndex}`}
           className="carousel__img"
         />
-        <a className="carousel-project-title" href={names[activeIndex]}>
+        <a
+          className="carousel-project-title"
+          href={"Tanay-Naik-Project-Portfolio/" + names[activeIndex]}
+        >
           {names[activeIndex]}
         </a>
       </div>
