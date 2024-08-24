@@ -21,6 +21,20 @@ function App() {
             path="Tanay-Naik-Project-Portfolio/projects"
             element={<ProjectPage />}
           ></Route>
+
+          <Route
+            path="Tanay-Naik-Project-Portfolio/StockDigestAI"
+            element={
+              <Project
+                img="./images/StockDigestAI.png"
+                link="https://devpost.com/software/stockdigestai"
+                description="This project is an AI-powered web platform that provides users with real-time insights into the stock market by retrieving and analyzing the most relevant news articles. Using a technique called Retrieval-Augmented Generation (RAG), the platform continuously scrapes financial news, processes it to extract key information, directing users to articles that have the best insights. Users can quickly access the latest headlines and stock recommendations, making it easier to stay informed and make investment decisions without needing to manually research the market. The platform delivers an accessible, data-driven approach to stock investing by offering personalized, timely news analysis to help users navigate the complexities of the financial world."
+                motivation="The inspiration for this project came from a desire to make stock investing more accessible to everyone. The financial world can be intimidating, with an overwhelming amount of information and fast-moving markets, which often leaves everyday investors feeling disconnected. I wanted to bridge this gap by leveraging AI to simplify the process of staying informed about stocks. By using Retrieval-Augmented Generation (RAG) to find the most relevant stock news articles in real-time, my goal was to provide investors with timely insights that empower them to make smarter decisions without needing to sift through countless sources. This project is driven by a belief that the power of the stock market should be within reach for all."
+                technologies="For this project, I used React.js for the frontend and Flask for the backend, integrating into the application a TiDB vector database. To generate embeddings, I used the msmarco-MiniLM-L12-cos-v5 model from the sentence-transformers library. To scrape data from Yahoo Finance, I ran a Node.js script using a subprocess that used the Puppeteer library."
+              />
+            }
+          ></Route>
+
           <Route
             path="Tanay-Naik-Project-Portfolio/Real Time Carbon Emissions Visualizer"
             element={

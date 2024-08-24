@@ -32,6 +32,9 @@ function Navbar() {
               Projects
             </NavLink>
             <div class="dropdown-content">
+              <NavLink to="Tanay-Naik-Project-Portfolio/stockdigestai">
+                StockDigestAI
+              </NavLink>
               <NavLink to="https://tn0123.github.io/Tanay-Naik-Project-Portfolio/Real%20Time%20Carbon%20Emissions%20Visualizer">
                 Real Time Carbon Emissions Visualizer
               </NavLink>
