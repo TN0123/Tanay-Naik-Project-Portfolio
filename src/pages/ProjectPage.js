@@ -4,6 +4,7 @@ import "./ProjectPage.css";
 
 function ProjectPage() {
   const images = [
+    "./images/StockDigestAI.png",
     "./images/carbon-emissions-project-img.png",
     "./images/Cerebro Logo.jpg",
     "./images/FaceLoggerDemo (1).gif",
@@ -11,6 +12,7 @@ function ProjectPage() {
   ];
 
   const names = [
+    "StockDigestAI",
     "Real Time Carbon Emissions Visualizer",
     "Cerebro",
     "FaceLogger",
