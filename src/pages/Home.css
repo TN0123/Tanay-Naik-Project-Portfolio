@@ -11,6 +11,12 @@
     font-size: 5.5vw;
     color: black;
     margin: 0.5rem;
+    transition: 0.3s;
+}
+
+.introbig:hover {
+    font-size: 6vw;
+    color: #1d4ed8;
 }
 
 .introtext {
@@ -31,4 +37,10 @@
     font-size: 2vw;
     margin: 1rem;
     color: black;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    font-size: 2.2vw;
+    color: #1d4ed8;
 }

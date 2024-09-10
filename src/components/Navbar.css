@@ -21,6 +21,7 @@ nav .title {
     font-weight: bold;
     text-decoration: none;
     color: white;
+    cursor: default;
 }
 
 nav ul {
@@ -42,6 +43,7 @@ nav ul li a {
     border-radius: 0.5rem;
     font-size: 25px;
     text-align: center;
+    transition: 0.3s;
 }
 
 nav ul li a:not(.active):hover {
@@ -106,17 +108,22 @@ nav .menu span {
 
 .dropdown {
     overflow: hidden;
+    transition: 0.3s;
 }
 
 .dropdown-content {
-    display: none;
+    display: block;
     position: absolute;
     border-radius: 0.5rem;
     z-index: 1;
     right: 1rem;
     min-width: 160px;
     max-width: 300px;
-    background-color:#172554
+    background-color: #2f3033;
+    transition: 0.3s;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
 }
   
 .dropdown-content a {
@@ -126,8 +133,14 @@ nav .menu span {
     display: block;
     text-align: center;
     font-size: 20px;
+    transition: 0.3s;
+}
+
+.dropdown-content a:not(.active):hover {
+    background-color: #172554;
 }
   
 .dropdown:hover .dropdown-content {
-    display: block;
+    opacity: 1;
+    height: auto;
 }
