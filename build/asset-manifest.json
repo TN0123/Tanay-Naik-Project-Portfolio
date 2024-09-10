@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Tanay-Naik-Project-Portfolio/static/css/main.5c2d3b97.css",
+    "main.css": "/Tanay-Naik-Project-Portfolio/static/css/main.adb50dcd.css",
     "main.js": "/Tanay-Naik-Project-Portfolio/static/js/main.f1b699b8.js",
     "index.html": "/Tanay-Naik-Project-Portfolio/index.html",
-    "main.5c2d3b97.css.map": "/Tanay-Naik-Project-Portfolio/static/css/main.5c2d3b97.css.map",
+    "main.adb50dcd.css.map": "/Tanay-Naik-Project-Portfolio/static/css/main.adb50dcd.css.map",
     "main.f1b699b8.js.map": "/Tanay-Naik-Project-Portfolio/static/js/main.f1b699b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c2d3b97.css",
+    "static/css/main.adb50dcd.css",
     "static/js/main.f1b699b8.js"
   ]
 }
