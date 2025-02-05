@@ -1,28 +1,56 @@
 import React from "react";
-import Carousel from "../components/Carousel";
+import { Link } from "react-router-dom";
 import "./ProjectPage.css";
 
 function ProjectPage() {
-  const images = [
-    "./images/StockDigestAI.png",
-    "./images/carbon-emissions-project-img.png",
-    "./images/Cerebro Logo.jpg",
-    "./images/FaceLoggerDemo (1).gif",
-    "./images/LLTrainerDemo (1).gif",
-  ];
-
-  const names = [
-    "StockDigestAI",
-    "Real Time Carbon Emissions Visualizer",
-    "Cerebro",
-    "FaceLogger",
-    "LLTrainer",
+  const projects = [
+    {
+      name: "StockDigestAI",
+      image: "/images/StockDigestAI.png",
+      path: "/stockdigestai",
+    },
+    {
+      name: "Carbon Emissions Visualizer",
+      image: "/images/carbon-emissions-project-img.png",
+      path: "/carbon-emissions",
+    },
+    {
+      name: "Cerebro",
+      image: "/images/Cerebro Logo.jpg",
+      path: "/cerebro",
+    },
+    {
+      name: "FaceLogger",
+      image: "/images/FaceLoggerDemo (1).gif",
+      path: "/facelogger",
+    },
+    {
+      name: "LLTrainer",
+      image: "/images/LLTrainerDemo (1).gif",
+      path: "/lltrainer",
+    },
   ];
 
   return (
-    <div className="carousel">
-      <Carousel images={images} names={names} />
-      <p className="carousel-caption">Click on a Project Link!</p>
+    <div className="projects-container">
+      <h1 className="projects-title">My Projects</h1>
+      <div className="projects-grid">
+        {projects.map((project, index) => (
+          <Link to={project.path} className="project-card" key={index}>
+            <div className="project-image-container">
+              <img
+                src={process.env.PUBLIC_URL + project.image}
+                alt={project.name}
+                className="project-image"
+              />
+            </div>
+            <div className="project-info">
+              <h2 className="project-name">{project.name}</h2>
+              <span className="view-project">View Project →</span>
+            </div>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }

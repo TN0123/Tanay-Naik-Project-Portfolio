@@ -1,46 +1,196 @@
+/* Remove the body style that affects all pages */
+/* body {
+    margin: 0;
+    overflow: hidden;
+} */
+
 .homepage {
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center ;
+    justify-content: center;
     align-items: center;
-    height: 80vh;
-    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    overflow: hidden;
+    position: relative;
+}
+
+.content-wrapper {
+    max-width: 1000px;
+    width: 100%;
+    animation: fadeIn 1s ease-in;
+    overflow: hidden;
 }
 
 .introbig {
-    font-size: 5.5vw;
-    color: black;
-    margin: 0.5rem;
-    transition: 0.3s;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
 }
 
-.introbig:hover {
-    font-size: 6vw;
-    color: #1d4ed8;
+.greeting {
+    display: block;
+    font-size: 2rem;
+    color: #666;
+    margin-bottom: 0.6rem;
 }
 
-.introtext {
-    color: black;
-    font-size: 1.25vw;
-    line-height: 2;
-    margin: 2rem;
+.name {
+    background: linear-gradient(120deg, #2196f3, #4a148c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
 }
 
 .socials {
     display: flex;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.social-link {
+    display: flex;
     align-items: center;
-    margin: 1rem;
-}
-
-.socials a{
+    gap: 0.6rem;
     text-decoration: none;
-    font-size: 2vw;
-    margin: 1rem;
-    color: black;
-    transition: 0.3s;
+    color: #333;
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    font-size: 1rem;
 }
 
-.socials a:hover {
-    font-size: 2.2vw;
-    color: #1d4ed8;
+.social-link:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.introtext {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-top: 1.5rem;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 1.5rem;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    max-height: calc(100vh - 400px);
+    overflow-y: auto;
+}
+
+.highlight {
+    color: #2196f3;
+    font-weight: 500;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .introbig {
+        font-size: 2.5rem;
+    }
+    
+    .greeting {
+        font-size: 1.4rem;
+    }
+    
+    .introtext {
+        font-size: 1rem;
+        padding: 1.5rem;
+    }
+
+    .social-link {
+        padding: 0.5rem 1rem;
+    }
+}
+
+.decorative-element {
+    position: absolute;
+    top: 6rem;
+    right: 20rem;
+    width: 400px;
+    height: 400px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.decorative-circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid rgba(33, 150, 243, 0.5);
+    animation: rotate 20s linear infinite;
+}
+
+.circle-1 {
+    width: 150px;
+    height: 150px;
+    top: 0;
+    right: 0;
+    border-style: dashed;
+}
+
+.circle-2 {
+    width: 225px;
+    height: 225px;
+    top: 30px;
+    right: 30px;
+    border-style: solid;
+    animation-direction: reverse;
+}
+
+.circle-3 {
+    width: 300px;
+    height: 300px;
+    top: 60px;
+    right: 60px;
+    border-style: dotted;
+}
+
+.geometric-line {
+    position: absolute;
+    background: linear-gradient(120deg, rgba(33, 150, 243, 0.4), rgba(74, 20, 140, 0.4));
+    border-radius: 4px;
+}
+
+.line-1 {
+    width: 180px;
+    height: 4px;
+    top: 75px;
+    right: 270px;
+    transform: rotate(45deg);
+}
+
+.line-2 {
+    width: 120px;
+    height: 4px;
+    top: 225px;
+    right: 90px;
+    transform: rotate(-45deg);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

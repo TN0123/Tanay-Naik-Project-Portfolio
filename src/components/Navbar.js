@@ -1,57 +1,67 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav>
-      <Link to="/" className="title">
-        Tanay Naik's Portfolio
+    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
+      <Link to="/" className="logo">
+        <span className="logo-text">TN</span>
       </Link>
 
       <div
-        className="menu"
-        onClick={() => {
-          setMenuOpen(!menuOpen);
-        }}
+        className={`hamburger ${menuOpen ? "active" : ""}`}
+        onClick={() => setMenuOpen(!menuOpen)}
       >
         <span></span>
         <span></span>
         <span></span>
       </div>
 
-      <ul className={menuOpen ? "open" : ""}>
+      <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
         <li>
-          <NavLink to="/">About</NavLink>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            About
+          </NavLink>
         </li>
-        <li>
-          <div class="dropdown">
-            <NavLink to="Tanay-Naik-Project-Portfolio/projects">
-              Projects
+        <li className="dropdown-container">
+          <NavLink
+            to="/projects"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Projects
+          </NavLink>
+          <div className="dropdown-content">
+            <NavLink to="/stockdigestai">StockDigestAI</NavLink>
+            <NavLink to="/carbon-emissions">
+              Carbon Emissions Visualizer
             </NavLink>
-            <div class="dropdown-content">
-              <NavLink to="Tanay-Naik-Project-Portfolio/stockdigestai">
-                StockDigestAI
-              </NavLink>
-              <NavLink to="https://tn0123.github.io/Tanay-Naik-Project-Portfolio/Real%20Time%20Carbon%20Emissions%20Visualizer">
-                Real Time Carbon Emissions Visualizer
-              </NavLink>
-              <NavLink to="Tanay-Naik-Project-Portfolio/Cerebro">
-                Cerebro
-              </NavLink>
-              <NavLink to="Tanay-Naik-Project-Portfolio/FaceLogger">
-                FaceLogger
-              </NavLink>
-              <NavLink to="Tanay-Naik-Project-Portfolio/LLTrainer">
-                LLTrainer
-              </NavLink>
-            </div>
+            <NavLink to="/cerebro">Cerebro</NavLink>
+            <NavLink to="/facelogger">FaceLogger</NavLink>
+            <NavLink to="/lltrainer">LLTrainer</NavLink>
           </div>
         </li>
         <li>
-          <NavLink to="Tanay-Naik-Project-Portfolio/contact">Contact</NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Contact
+          </NavLink>
         </li>
       </ul>
     </nav>
