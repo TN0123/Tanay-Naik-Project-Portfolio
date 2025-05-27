@@ -16,6 +16,19 @@ function App() {
           <Route path="/projects" element={<ProjectPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route
+            path="/datavision"
+            element={
+              <Project
+                title="DataVision"
+                img={process.env.PUBLIC_URL + "/images/datavision.png"}
+                link="https://devpost.com/software/datavision-hrm5jv"
+                description="This project is an automated data analyst that uncovers actionable insights from uploaded CSV files. It cleans the data, identifies and tests potential relationships, generates visualizations, and summarizes findings in plain English. Users can ask follow-up questions, and the agent dynamically writes and runs code to explore new queries, making the analysis scalable and adaptable to any dataset. This ensures an accessible, conversational approach to advanced data analysis."
+                motivation="This project was made over 36 hours during Bitcamp 2025. Our team wanted to give people the ability to easily discover interesting relationships and obtain actionable insights from any data they have, regardless of their data science prior knowledge/background."
+                technologies="We used next.js for the frontend and python flask for the backend. For the AI agent, we used Google Gemini 2.0 Flash for its longer context window and fast speed. We used langchain and langgraph for our agentic workflow, making the agent produce pandas code to interact with the data and produce matplotlib visualizations."
+              />
+            }
+          />
+          <Route
             path="/stockdigestai"
             element={
               <Project
