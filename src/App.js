@@ -16,6 +16,19 @@ function App() {
           <Route path="/projects" element={<ProjectPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route
+            path="/schematic"
+            element={
+              <Project
+                title="Schematic"
+                img={process.env.PUBLIC_URL + "/images/schematic.png"}
+                link="https://www.schematic.now/"
+                description="Schematic is an AI-Powered Productivity Workspace that currently features three core tools: a cursor-like AI powered editor for everyday writing, a flexible notes app, and a smart calendar that syncs with your notes and goals. My long-term vision is to evolve this platform into a personalized AI life assistant that integrates seamlessly with users' everyday tools, becoming the primary interface to help people work toward their goals."
+                motivation="I want a tool like this to exist, and I'm working on making it a reality."
+                technologies="next.js, google gemini, openai gpt 4.1, neondb, prisma, postgres"
+              />
+            }
+          />
+          <Route
             path="/datavision"
             element={
               <Project

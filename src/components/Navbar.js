@@ -46,6 +46,7 @@ function Navbar() {
             Projects
           </NavLink>
           <div className="dropdown-content">
+            <NavLink to="/schematic">Schematic</NavLink>
             <NavLink to="/datavision">DataVision</NavLink>
             <NavLink to="/stockdigestai">StockDigestAI</NavLink>
             <NavLink to="/carbon-emissions">

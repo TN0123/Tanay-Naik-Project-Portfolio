@@ -5,6 +5,11 @@ import "./ProjectPage.css";
 function ProjectPage() {
   const projects = [
     {
+      name: "Schematic",
+      image: "/images/schematic.png",
+      path: "/schematic",
+    },
+    {
       name: "DataVision",
       image: "/images/datavision.png",
       path: "/datavision",
