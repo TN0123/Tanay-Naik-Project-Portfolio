@@ -55,14 +55,13 @@ function Home() {
 
         <p className="introtext">
           I am an undergraduate computer science major and statistics minor at
-          the University of Maryland, College Park. I am passionate about
-          research and innovation through projects and startups. My interests
-          include artificial intelligence, machine learning, computer vision,
-          and human computer interaction.
+          the University of Maryland, College Park. I'm passionate about
+          leveraging technology to solve real-world problems, and I'm constantly
+          seeking out new opportunities to learn and develop my skills.
           <br />
           <br />
-          Check out my projects to see my past work and let's connect if you're
-          interested in collaborating!
+          Check out my projects to see some of my work and let's connect if
+          you're interested in collaborating!
         </p>
       </div>
     </div>
